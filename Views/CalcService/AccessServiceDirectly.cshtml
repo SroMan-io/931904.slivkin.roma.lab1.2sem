@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@inject WebApplication1.Services.CalcService CalcService
+@{
+    ViewData["Title"] = "AccessServiceDirectly";
+    int x = CalcService.x ,y= CalcService.y,add= CalcService.add,sub= CalcService.sub,mult= CalcService.mult,div= CalcService.div;
+}
+
+
+<h1 span style = "margin: 15px; margin-left:0">AccessServiceDirectly</h1> 
+<b>Rand Value First : @x</b><br/>
+<b>Rand Value Second : @y</b><br/>
+<b>Add :</b><br/> @x + @y = @add<br/>
+<b>Sub :</b><br/> @x - @y = @sub<br/>
+<b>Mult :</b><br/> @x * @y = @mult<br/>
+ @if (@div != 100)
+{<p><b>Div :</b><br/> @x / @y = @div</p>}
+else {<p><b>Div :</b><br/>На ноль делить нельзя!</p>}

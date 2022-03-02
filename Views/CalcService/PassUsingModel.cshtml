@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "PassUsingModel";
+   
+}
+
+
+<h1 span style = "margin: 15px; margin-left:0">PassUsingModel</h1> 
+<b>Rand Value First : @Model.x</b><br/>
+<b>Rand Value Second : @Model.y</b><br/>
+<b>Add :</b><br/> @Model.x + @Model.y = @Model.add<br/>
+<b>Sub :</b><br/> @Model.x - @Model.y = @Model.sub<br/>
+<b>Mult :</b><br/> @Model.x * @Model.y = @Model.mult<br/>
+ @if (Model.div != 100)
+{<p><b>Div :</b><br/> @Model.x / @Model.y = @Model.div</p>}
+else {<p><b>Div :</b><br/>На ноль делить нельзя!</p>}

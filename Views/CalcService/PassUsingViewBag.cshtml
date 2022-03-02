@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "PassUsingViewBag";
+   
+}
+
+
+<h1 span style = "margin: 15px; margin-left:0">PassUsingViewBag</h1> 
+<b>Rand Value First : @ViewBag.x</b><br/>
+<b>Rand Value Second : @ViewBag.y</b><br/>
+<b>Add :</b><br/> @ViewBag.x + @ViewBag.y = @ViewBag.add<br/>
+<b>Sub :</b><br/> @ViewBag.x - @ViewBag.y = @ViewBag.sub<br/>
+<b>Mult :</b><br/> @ViewBag.x * @ViewBag.y = @ViewBag.mult<br/>
+ @if (ViewBag.div != 100)
+{<p><b>Div :</b><br/> @ViewBag.x / @ViewBag.y = @ViewBag.div</p>}
+else {<p><b>Div :</b><br/>На ноль делить нельзя!</p>}

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+ <h2 span style = "margin: 15px; margin-left:0">Calc Service Demonstration</h2>
+    <ul>
+       @* <li span style ="text-decoration: none;"> @Html.ActionLink("Using Model Calc", "PassUsingModel")</li>*@
+    <li> <a span style ="text-decoration: none;" href="/CalcService/PassUsingModel">Using Model Calc</a></li>
+    <li> <a span style ="text-decoration: none;"href="/CalcService/PassUsingViewData">Using ViewData Calc</a></li>
+    <li> <a span style ="text-decoration: none;"href="/CalcService/PassUsingViewBag">Using ViewBag Calc</a></li>
+    <li> <a span style ="text-decoration: none;"href="/CalcService/AccessServiceDirectly">Using Service Injection Calc</a></li>
+    </ul>
